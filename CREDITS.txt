@@ -1,0 +1,5 @@
+ICONS: https://www.flaticon.com/packs/essentials-91?word=essential%20pack
+
+AMONG US:
+  MAP: https://sketchfab.com/3d-models/among-us-map-the-skeld-59a93886f9e74ff6836dff0c269da45f
+  AVATAR: https://sketchfab.com/3d-models/among-us-astronaut-a522ee5fbab04de691837095b997d7ed

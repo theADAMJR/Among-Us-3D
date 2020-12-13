@@ -10,8 +10,9 @@ namespace ProjectAU.Controls
         public float PlayerSpeed { get; set; } = 1;
 
         [SerializeField]
-        public bool IsAlive { get; set; }
+        public bool IsAlive { get; set; } = true;
 
+        private Animator animator => GetComponentInChildren<Animator>();
         private Rigidbody rigidbody => GetComponent<Rigidbody>();
         private Player.Player player => GetComponent<Player.Player>();
 
@@ -24,7 +25,14 @@ namespace ProjectAU.Controls
             Rotate();
         }
 
-        public void Run() => rigidbody.velocity = GetVelocity();
+        public void Run()
+        {
+            rigidbody.velocity = GetVelocity();
+            if (rigidbody.velocity.sqrMagnitude > 0)
+                animator.Play("Run");
+            else
+                animator.Play("Idle");
+        }
         private void Rotate() => transform.rotation = Quaternion.LookRotation(-GetVelocity());
 
         private Vector3 GetVelocity() {

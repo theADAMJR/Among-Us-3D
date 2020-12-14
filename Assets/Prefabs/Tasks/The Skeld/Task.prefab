@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118776040384692013}
   - component: {fileID: 1118776040384692012}
+  - component: {fileID: 3696858926309642407}
   m_Layer: 0
   m_Name: Task
   m_TagString: Untagged
@@ -46,19 +47,34 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 3476530864952908025, guid: 0dd081a5c108ea0459ed46dedf7a510a, type: 3}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: ActivationRadius
-      Entry: 4
-      Data: 15
     - Name: taskButton
       Entry: 6
       Data: 
+    - Name: Name
+      Entry: 6
+      Data: 
     - Name: TaskMenu
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
+    - Name: TaskMenus
+      Entry: 6
+      Data: 
+--- !u!135 &3696858926309642407
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118776040384692002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}

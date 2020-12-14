@@ -18,7 +18,7 @@ namespace ProjectAU.UI
 
             var rectTransform = freePanel.GetComponent<RectTransform>();
             int totalTasks = player.IncompleteTasks.Count + player.CompletedTasks.Count;
-            Debug.Log(rectTransform.lossyScale);
+            Debug.Log(totalTasks);
             rectTransform.localScale = new Vector3(player.CompletedTasks.Count / totalTasks, 1, 1);
         }
 

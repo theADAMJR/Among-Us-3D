@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace ProjectAU.Environment
 {
+    [RequireComponent(typeof(SphereCollider))]
     public class Task : RadiusButton
     {
         [SerializeField]
@@ -20,12 +21,7 @@ namespace ProjectAU.Environment
             taskButton.onClick.AddListener(Open);
         }
 
-        public void Update()
-        {
-            preconditionMet = !player.IsImpostor;
-
-            base.Update();
-        }
+        public void Update() => preconditionMet = !player.IsImpostor;
 
         public void Open()
         {

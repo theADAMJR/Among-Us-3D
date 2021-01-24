@@ -1,6 +1,6 @@
 # Among-Us-3D
 
-> **ℹ️ Info: Development is currently paused until completion of ![DClone](https://github.com/d-clone).**
+> **ℹ️ Info: Development is currently paused until release of [DClone](https://github.com/d-clone).**
 
 ## Preview
 Player Animations - https://gyazo.com/860f7a2f6dba0fa31f6ed21afbf0ecb7
